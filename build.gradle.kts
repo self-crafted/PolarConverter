@@ -21,3 +21,19 @@ dependencies {
     implementation(libs.minestom)
     implementation(libs.bundles.polar)
 }
+
+tasks {
+    shadowJar {
+        manifest {
+            attributes("Main-Class" to "net.bitbylogic.polarconverter.PolarConverter")
+        }
+        archiveBaseName.set(rootProject.name)
+        archiveClassifier.set("")
+        archiveVersion.set(project.version.toString())
+        mergeServiceFiles()
+    }
+
+    build {
+        dependsOn("shadowJar")
+    }
+}
