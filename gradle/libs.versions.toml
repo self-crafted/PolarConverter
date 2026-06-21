@@ -4,7 +4,7 @@ metadata.format.version = "1.1"
 
 minestom = "2025.12.20-1.21.11"
 
-polar = "1.15.0"
+polar = "1.16.0"
 fastutil = "8.5.18"
 
 # Gradle plugins
