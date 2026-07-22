@@ -9,7 +9,7 @@ fastutil = "8.5.18"
 
 # Gradle plugins
 blossom = "2.2.0"
-shadowJar = "9.4.3"
+shadowJar = "9.6.1"
 
 [libraries]
 
